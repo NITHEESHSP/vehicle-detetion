@@ -2,19 +2,19 @@ import cv2
 
 # Load the pre-trained detection models
 car_cascade = cv2.CascadeClassifier(
-    "C:/Users/ADMIN/Desktop/face/cardetect/car_detector.xml"
+    "car_detector.xml"
 )
 pedestrian_cascade = cv2.CascadeClassifier("haarcascade_fullbody.xml")
 bike_cascade = cv2.CascadeClassifier(
-    "C:/Users/ADMIN/Desktop/face/cardetect/two_wheeler.xml"
+    "two_wheeler.xml"
 )
 bus_cascade = cv2.CascadeClassifier(
-    "C:/Users/ADMIN/Desktop/face/cardetect/Bus_front.xml"
+    "Bus_front.xml"
 )
 
 # Open the video file for detection
 video1 = cv2.VideoCapture(
-    "C:/Users/ADMIN/Desktop/face/cardetect/15519-264715970 (360p).mp4"
+    "15519-264715970 (360p).mp4"
 )
 
 while True:
